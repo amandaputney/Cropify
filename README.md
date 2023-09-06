@@ -1,51 +1,74 @@
-# MERN-Stack Template
+# Capstone Project: CROPIFY
 
-Use for future MERN-Stack projects
+Cropify is a full-stack single-page application that allows users to plan and visualize crop rotation for small scale farms and gardens. This user friendly application will serve as a valuable tool for farmers & gardeners to improve the sustainability and productivity of their harvests. It promotes responsible land management practices, reduces the need for chemical inputs, and contributes to long-term soil health.
 
-## How-to
+### Technologies Used:
 
-Here’s the process to create a new MERN-Stack project that starts with the infrastructure code:
+- MongoDB/Mongoose
+- Express
+- React
+- Node
+- Third Party API
 
-### 1. Clone Repo
+### MVP:
 
-Clone the mern-infrastructure repo: git clone git@github.com:amandaputney/MERN-stack-template.git INSERT:name-of-new-project
-<br>
-Note that the folder created will be same as name-of-project instead of mern-infrastructure
+☐ Token Based authentication working
+☐ Consume data from [Perenual API](https://perenual.com/docs/api)
+☐ Well styled, interactive front end
 
-cd name-of-project
+### User Stories:
 
-### 2. Install the Node modules:
+- AAU I want to be able to sign-up, log in, and log out
+- AAU I want to search a database of crops
+- AAU I want to fetch detailed information about a specific crop, including growth requirements based on hardiness zone
 
-npm i
+### Stretch:
 
-### 3. Create a .env (touch .env) and add entries for DATABASE_URL and SECRET
+☐ Use Browser API to detect user location and show hardiness zone
+☐ Use MapBox for data visualization
+☐ Allow users to CRUD specific crop rotation plans
 
-### 4. Update Project Name
+### API Proof of Concept:
 
-Update the "name" : "mern-infrastructure" in package.json to the name of your project.
+[_Perenual_](https://perenual.com/docs/api)
 
-### 5. Create a new repo on your personal GH account.
+![](https://hackmd.io/_uploads/SkiBgHIR3.png)
 
-Copy the new GH repo’s URL.
+### Wireframes:
 
-### 6. Update the remote’s URL
+![](https://hackmd.io/_uploads/H1siJUUC2.png)
 
-git remote set-url origin paste the copied GH url
+### Entity-Relationship-Diagram (ERD):
 
-### 7. Make the initial commit
+![](https://hackmd.io/_uploads/r1BD3DLCn.png)
 
-git add -A && git commit -m "Initial commit"
+### React-Component-Diagram (RCD):
 
-### 8. Push for the first time
+_In progress_
 
-git push -u origin main
+![](https://hackmd.io/_uploads/Sk9uXLUA2.png)
 
-### 9. Have fun!
+### Getting Started:
 
-# Getting Started with Create React App
+- Add link to the deployed app here
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Planning Tools:
 
-### Deployment
+- [Kanban Board](https://www.notion.so/59c675c3b16f40df98e1c6d2ccdefe67?v=f423c26644104be7acc0e4b8f271ea89&pvs=4)
+<hr>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Next Steps:
+
+- Add Planned future enhancements here
+
+<hr>
+
+### ARCHIVE:
+
+_GROW STUFF_
+
+![](https://hackmd.io/_uploads/ByykqzL0n.png)
+
+_TREFLE_
+
+![](https://hackmd.io/_uploads/r1Kh0MI02.png)
