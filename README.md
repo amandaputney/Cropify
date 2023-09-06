@@ -42,7 +42,7 @@ Cropify is a full-stack single-page application that allows users to plan and vi
 
 ### Entity-Relationship-Diagram (ERD):
 
-![](https://hackmd.io/_uploads/r1BD3DLCn.png)
+![](https://hackmd.io/_uploads/HyanAuLC3.png)
 
 ### React-Component-Diagram (RCD):
 
