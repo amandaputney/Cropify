@@ -13,7 +13,9 @@ Cropify is a full-stack single-page application that allows users to plan and vi
 ### MVP:
 
 ☐ Token Based authentication working
+
 ☐ Consume data from [Perenual API](https://perenual.com/docs/api)
+
 ☐ Well styled, interactive front end
 
 ### User Stories:
@@ -60,15 +62,3 @@ _In progress_
 ### Next Steps:
 
 - Add Planned future enhancements here
-
-<hr>
-
-### ARCHIVE:
-
-_GROW STUFF_
-
-![](https://hackmd.io/_uploads/ByykqzL0n.png)
-
-_TREFLE_
-
-![](https://hackmd.io/_uploads/r1Kh0MI02.png)
