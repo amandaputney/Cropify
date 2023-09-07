@@ -2,6 +2,7 @@
 //come here to do all API request refactoring (i.e. using AXIOS)
 //send token from here
 import { getToken } from "./users-service";
+import axios from "axios";
 
 //use default PARAMS 
 export default async function sendRequest(url, method= 'GET', payload = null) {
