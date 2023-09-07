@@ -118,7 +118,7 @@ import axios from 'axios';
 
 
 
-function SpeciesSearch() {
+export default function SpeciesSearch() {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -180,4 +180,3 @@ function SpeciesSearch() {
   );
 }
 
-export default SpeciesSearch;
