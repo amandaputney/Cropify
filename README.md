@@ -27,7 +27,9 @@ Cropify is a full-stack single-page application that allows users to plan and vi
 ### Stretch:
 
 ☐ Use Browser API to detect user location and show hardiness zone
+
 ☐ Use MapBox for data visualization
+
 ☐ Allow users to CRUD specific crop rotation plans
 
 ### API Proof of Concept:
