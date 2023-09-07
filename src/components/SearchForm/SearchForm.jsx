@@ -111,13 +111,6 @@ import axios from 'axios';
 
 
 
-
-
-
-
-
-
-
 export default function SpeciesSearch() {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
