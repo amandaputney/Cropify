@@ -33,10 +33,11 @@ const userSchema = new Schema({
 //mogoose middleware
 //hases the password anytime the password has changed
 userSchema.pre('save', async function(next) {
-    //'this' keyword is the user document
-    if (!this.isModified('password')) return next();
-    //replace the password with the computed hash instead
-    this.password = await bcrypt.hash(this.password, SALT_ROUNDS);
+  // 'this' is the user document
+  if (!this.isModified('password')) return next();
+  // Replace the password with the computed hash
+  this.password = await bcrypt.hash(this.password, SALT_ROUNDS);
+  return next();
 });
 
 module.exports = mongoose.model('User', userSchema); 
