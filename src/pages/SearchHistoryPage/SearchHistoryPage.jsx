@@ -10,8 +10,8 @@ export default function OrderHistoryPage () {
     return (
 //must wrap below in <> </> to return a single root component/node
     <>
-        <h1>OrderHistoryPage</h1>
-        <button onClick={ handleCheckToken }>Check When My Login Expires</button>
+        <h1>SearchHistoryPage</h1>
+        {/* <button onClick={ handleCheckToken }>Check When My Login Expires</button> */}
     </>
     );
 };
