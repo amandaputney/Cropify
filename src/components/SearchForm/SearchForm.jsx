@@ -41,6 +41,7 @@ export default function SpeciesSearch() {
     setSearchTerm(event.target.value);
   };
 
+
   return (
     <div>
       <input
@@ -61,7 +62,7 @@ export default function SpeciesSearch() {
             <i>{species.scientific_name}</i>
             <div></div>
             {species.default_image === null || species.default_image.original_url === 
-"https://perenual.com/storage/image/upgrade_access.jpg" ? (
+              "https://perenual.com/storage/image/upgrade_access.jpg" ? (
               <p>Image not available</p>
             ) : (
               <img src={species.default_image.original_url} alt="image" />
