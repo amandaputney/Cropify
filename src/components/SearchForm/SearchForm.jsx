@@ -151,7 +151,6 @@ export default function SpeciesSearch() {
 
   return (
     <div>
-      <h2>Species Search</h2>
       <input
         type="text"
         placeholder="Search species..."
