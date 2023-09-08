@@ -54,8 +54,10 @@ export default function SpeciesSearch() {
       ) : (
         <ul>
           {searchResults.map((species) => (
-            <li key={species.id}>{species.common_name} <div></div>
-            <img src={species.default_image.thumbnail} alt="image"></img></li>
+            <li key={species.id}><b>{species.common_name} </b><div></div>
+            <i>{species.scientific_name}</i> <div></div>
+            <img src={species.default_image.thumbnail }alt="image"></img>
+            </li>
           ))}
         </ul>
       )}
