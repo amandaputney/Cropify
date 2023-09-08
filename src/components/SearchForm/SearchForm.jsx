@@ -1,6 +1,68 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
+export default function SpeciesSearch() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  const apiUrl = 'https://perenual.com/api/species-list?&key=sk-U1XV64f8bef48b9d62094&q=';
+
+  const fetchSpeciesData = async () => {
+    setLoading(true);
+
+    try {
+      const response = await axios.get(apiUrl + searchTerm);
+      const filteredData = response.data.data.filter((species) =>
+        species.common_name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setSearchResults(filteredData);
+      setLoading(false);
+      console.log('API Response:', response.data);
+      console.log('Filtered Data:', filteredData);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setLoading(false);
+    }
+  };
+
+  const handleSearch = () => {
+    if (searchTerm.trim() === '') {
+      setSearchResults([]); // Clear results when search term is empty
+      return;
+    }
+
+    fetchSpeciesData();
+  };
+
+  const handleSearchInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="Search crop..."
+        value={searchTerm}
+        onChange={handleSearchInputChange}
+      />
+      <button onClick={handleSearch}>Search</button>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <ul>
+          {searchResults.map((species) => (
+            <li key={species.id}>{species.common_name} <div></div>
+            <img src={species.default_image.thumbnail} alt="image"></img></li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 // export default function SpeciesSearch() {
 //   const [searchTerm, setSearchTerm] = useState('');
 //   const [searchResults, setSearchResults] = useState([]);
@@ -108,67 +170,3 @@ import axios from 'axios';
 //     </div>
 //   );
 // }
-
-
-
-export default function SpeciesSearch() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const [loading, setLoading] = useState(false);
-
-  const apiUrl = 'https://perenual.com/api/species-list?page=*&key=sk-U1XV64f8bef48b9d62094';
-
-  const fetchSpeciesData = async () => {
-    setLoading(true);
-
-    try {
-      const response = await axios.get(apiUrl);
-      const filteredData = response.data.data.filter((species) =>
-        species.common_name.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-      setSearchResults(filteredData);
-      setLoading(false);
-      console.log('API Response:', response.data);
-      console.log('Filtered Data:', filteredData);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-      setLoading(false);
-    }
-  };
-
-  const handleSearch = () => {
-    if (searchTerm.trim() === '') {
-      setSearchResults([]); // Clear results when search term is empty
-      return;
-    }
-
-    fetchSpeciesData();
-  };
-
-  const handleSearchInputChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search species..."
-        value={searchTerm}
-        onChange={handleSearchInputChange}
-      />
-      <button onClick={handleSearch}>Search</button>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <ul>
-          {searchResults.map((species) => (
-            <li key={species.id}>{species.common_name} <div></div>
-            <img src={species.default_image.thumbnail} alt="image"></img></li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-}
-
