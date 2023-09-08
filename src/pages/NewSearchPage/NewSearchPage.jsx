@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import SearchForm from '../../components/SearchForm/SearchForm';
 
 
-
-
 export default function NewSearchPage() {
   const [searchResults, setSearchResults] = useState([]);
 

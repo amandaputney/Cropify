@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import MyModal from '../MyModal/MyModal';
 
 
 export default function SpeciesSearch() {
@@ -54,9 +55,19 @@ export default function SpeciesSearch() {
       ) : (
         <ul>
           {searchResults.map((species) => (
-            <li key={species.id}><b>{species.common_name} </b><div></div>
-            <i>{species.scientific_name}</i> <div></div>
-            <img src={species.default_image.thumbnail }alt="image"></img>
+          <li key={species.id}>
+            <b>{species.common_name}</b>
+            <div></div>
+            <i>{species.scientific_name}</i>
+            <div></div>
+            {species.default_image === null || species.default_image.original_url === 
+"https://perenual.com/storage/image/upgrade_access.jpg" ? (
+              <p>Image not available</p>
+            ) : (
+              <img src={species.default_image.original_url} alt="image" />
+            )}
+            <div></div>
+             <MyModal />
             </li>
           ))}
         </ul>

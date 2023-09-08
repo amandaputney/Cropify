@@ -31,7 +31,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--mint);
+  background-color: var(--mint) !important;
   padding: 2vmin;
   height: 100vh;
 }
@@ -41,8 +41,17 @@ code {
     monospace;
 }
 
+nav {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--darkteal);
+}
+
 #root {
   height: 100%;
+}
+
+a{
+color: var(--darkteal) !important;
 }
 
 .align-ctr {
@@ -127,17 +136,17 @@ input:focus {
   border-color: var(--darkteal);
 }
 
-button, a.button {
+button, a.button, .btn, btn-primary {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--darkteal);
+  background-color: var(--darkteal) !important;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2);
-  border-radius: .5vmin;
+  border: .1vmin solid var(--tan-2) !important;
+  border-radius: .5vmin !important;
   outline: none;
   cursor: pointer;
 }
@@ -172,3 +181,10 @@ footer {
   text-align: center;
   font-size: 8vmin;
 }
+
+img {
+  width: 200px;
+  height: 200px;
+
+}
+
