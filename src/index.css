@@ -44,6 +44,7 @@ code {
 nav {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: var(--darkteal);
+  padding-bottom: 50px;
 }
 
 #root {

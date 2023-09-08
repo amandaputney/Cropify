@@ -13,7 +13,7 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link to="/search/new">New Search</Link>
       &nbsp; | &nbsp;
-      <Link to="/history">Search History</Link>
+      <Link to="/plan">Rotation Plans</Link>
       &nbsp; | &nbsp;
       <Link to="" onClick={handleLogOut}>Log Out</Link>
     </nav>
