@@ -9,7 +9,7 @@
   --text-light: #454444;
   --text-dark: #201f1f;
   --bg-dark-rgb: #ccddd5;
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
 *, *:before, *:after {
@@ -68,6 +68,7 @@ nav {
   z-index: 100;
   /* Ensure the navbar is above other elements */
   top: 0;
+  height: 60px;
 }
 
 
@@ -192,6 +193,8 @@ button, a.button, .btn, btn-primary {
   border-radius: .5vmin !important;
   outline: none;
   cursor: pointer;
+  position: relative;
+  z-index: 999;
 }
 
 button.logIn {
@@ -200,7 +203,7 @@ button.logIn {
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 9999;
+  z-index: 999;
 }
 
 button.btn-xs {
@@ -236,20 +239,19 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 50px;
   /* Adjust the height as needed */
-  font-size: 6vmin;
+  font-size: 5vmin;
   font-family: 'Itim', cursive;
-  background-color: #0ca789;
   /* Set the background color */
-  color: rgb(203, 255, 228);
-  vertical-align: top;
+  color: rgb(203, 255, 228);;
+  vertical-align: bottom;
   /* Set the text color */
   text-align: center;
   /* Center the content horizontally */
   line-height: 35px;
   /* Vertically center the content */
-  z-index: 999;
+  z-index: 1;
   /* Ensure it's above other elements */
 }
 
