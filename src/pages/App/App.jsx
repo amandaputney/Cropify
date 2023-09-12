@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import NewSearchPage from '../NewSearchPage/NewSearchPage';
+import HardinessZonePage from '../HardinessZonePage/HardinessZonePage';
 import AuthPage from '../AuthPage/AuthPage';
 import PlanPage from '../PlanPage/PlanPage';
 import NavBar from '../../components/NavBar/NavBar';
@@ -22,6 +23,7 @@ export default function App() {
               {/* Routes component will render the most appropriate match */}
               <Route path="/search/new/" element={<NewSearchPage />}/>
               <Route path="/plan" element={<PlanPage />}/>
+              <Route path="/hardiness" element={<HardinessZonePage />}/>
             </Routes>
           </>
               :

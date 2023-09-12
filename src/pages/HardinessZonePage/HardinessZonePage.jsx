@@ -10,9 +10,13 @@ export default function PlanPage () {
     return (
 //must wrap below in <> </> to return a single root component/node
     <>
-        <h1>Crop Rotation Plans</h1>
+        <h1>Find Your Hardiness Zone</h1>
         <br />
-        <h2>Coming Soon!</h2>
+        <h2></h2>
+
+        <iframe src="https://experience.arcgis.com/experience/58908bc6c8cd4e2f9f2ed73b80191d15/" 
+        frameborder="0" width="1000" height="600"></iframe>
+        <br />
 
     </>
     );

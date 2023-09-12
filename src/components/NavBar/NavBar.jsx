@@ -52,6 +52,9 @@ export default function NavBar({ user, setUser }) {
         <Link to="/plan" className="nav-link">
           Rotation Plans
         </Link>
+        <Link to="/hardiness" className="nav-link">
+          Hardiness Zone
+        </Link>
         <Nav className="ml-auto">
           <Button variant="outline-light" onClick={handleLogOut}>
             Log Out
