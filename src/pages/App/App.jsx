@@ -5,6 +5,7 @@ import './App.css';
 import NewSearchPage from '../NewSearchPage/NewSearchPage';
 import HardinessZonePage from '../HardinessZonePage/HardinessZonePage';
 import AuthPage from '../AuthPage/AuthPage';
+import HomePage from '../HomePage/HomePage';
 import PlanPage from '../PlanPage/PlanPage';
 import NavBar from '../../components/NavBar/NavBar';
 
@@ -24,11 +25,14 @@ export default function App() {
               <Route path="/search/new/" element={<NewSearchPage />}/>
               <Route path="/plan" element={<PlanPage />}/>
               <Route path="/hardiness" element={<HardinessZonePage />}/>
+              <Route path="/" element={<HomePage />}/>
             </Routes>
+           
           </>
               :
           <AuthPage setUser={setUser}/>
       }
+
     </main>
   );
 }
