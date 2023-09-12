@@ -44,7 +44,8 @@ export default function NavBar({ user, setUser }) {
   return (
     <Navbar bg="light" variant="light" fixed="top">
       <Container>
-        <img src="Logo.png" alt="logo" className="navLogo"/>
+        <Link to="/" className="nav-link">
+            <img src="Logo.png" alt="logo" className="navLogo"/></Link>
         <Navbar.Brand>Hi {user.name}</Navbar.Brand>
         <Link to="/search/new" className="nav-link">
           Crops

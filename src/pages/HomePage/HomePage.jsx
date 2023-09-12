@@ -1,5 +1,6 @@
 import { checkToken } from "../../utilities/users-service";
 
+
 export default function HomePage () {
     async function handleCheckToken() {
         const expDate = await checkToken(); 
@@ -9,7 +10,7 @@ export default function HomePage () {
     return (
     <>
       <br />
-            <h4> Cropify is a full-stack single-page application that allows users 
+            <h4> <b>Cropify</b> is a full-stack single-page application that allows users 
                 to plan and visualize crop rotation for small scale farms and gardens. </h4>
       <br />       
             <h4>  This user friendly application will
