@@ -41,9 +41,9 @@ async function create(req, res) {
     res.json(token);
     } catch (err) {
     // Probably a dup email
-    console.log(err);
+    console.log('LOOK HERE ERROR:', err);
     res.status(400).json(err);
-    console.log(err);
+    console.log('LOOK HERE ERROR:', err);
     }
 }
 
