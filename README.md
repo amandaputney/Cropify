@@ -1,4 +1,6 @@
-# Capstone Project: CROPIFY
+# CROPIFY
+
+## https://crop-ifyy-9d17ac299a72.herokuapp.com/
 
 Cropify is a full-stack single-page application that allows users to plan and visualize crop rotation for small scale farms and gardens. This user friendly application will serve as a valuable tool for farmers & gardeners to improve the sustainability and productivity of their harvests. It promotes responsible land management practices, reduces the need for chemical inputs, and contributes to long-term soil health.
 
@@ -58,7 +60,7 @@ _In progress_
 
 ### Getting Started:
 
-- Add link to the deployed app here
+https://crop-ifyy-9d17ac299a72.herokuapp.com/
 
 ### Planning Tools:
 
