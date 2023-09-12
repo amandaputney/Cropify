@@ -47,7 +47,7 @@ export default function NavBar({ user, setUser }) {
         <img src="Logo.png" alt="logo" className="navLogo"/>
         <Navbar.Brand>Hi {user.name}</Navbar.Brand>
         <Link to="/search/new" className="nav-link">
-          New Search
+          Crops
         </Link>
         <Link to="/plan" className="nav-link">
           Rotation Plans
