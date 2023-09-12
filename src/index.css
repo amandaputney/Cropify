@@ -72,11 +72,8 @@ nav {
 }
 
 
-
-/* Style for the navbar links */
 nav a {
   color: var(--lightteal);
-  /* Set the link color */
   text-decoration: none;
   /* Remove underlines from links */
   margin: 0 10px;
@@ -88,6 +85,11 @@ nav .navLogo {
   width: 60px;
   height: 60px;
 }
+
+.navbar-brand {
+  color: orange !important;
+}
+
 
 /* Style for the Log Out link */
 nav #LogOut {
@@ -166,7 +168,7 @@ label {
   align-items: center;
 }
 
-input {
+.searchInput {
   padding: 1vmin;
   font-size: 2vmin;
   border: .1vmin solid var(--highlight);
@@ -174,17 +176,22 @@ input {
   color: var(--text-dark);
   background-image: none !important; /* prevent lastpass */
   outline: none;
+  margin: 30px !important;
 }
 
 input:focus {
   border-color: var(--darkteal);
 }
 
-button, a.button, .btn, btn-primary {
-  margin: 2vmin;
+button, a.button, .btn, btn-primary, .btn-primary{
+  margin-bottom: 2vmin;
+  margin-top: 1vmin;;
   padding: 1vmin;
   color: var(--white);
   background-color: var(--darkteal) !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif !important;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
@@ -223,16 +230,7 @@ button[type="submit"] {
   padding: .6vmin .8vmin;
 }
 
-/* footer {
-  padding: auto;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  font-family: 'Itim', cursive;
-  color: rgb(203, 255, 228);
-  text-align: center;
-  font-size: 10vmin;
-} */
+
 
 footer {
   position: fixed;

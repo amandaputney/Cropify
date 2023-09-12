@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import axios from 'axios';
 import MyModal from '../MyModal/MyModal';
 
@@ -7,6 +7,7 @@ export default function SpeciesSearch() {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [selectedSpeciesData, setSelectedSpeciesData] = useState(null);
 
   const apiUrl = 'https://perenual.com/api/species-list?&key=sk-U1XV64f8bef48b9d62094&q=';
 
@@ -45,6 +46,7 @@ export default function SpeciesSearch() {
   return (
     <div>
       <input
+        className="searchInput"
         type="text"
         placeholder="Search crop..."
         value={searchTerm}
@@ -68,7 +70,8 @@ export default function SpeciesSearch() {
               <img src={species.default_image.original_url} alt="image" />
             )}
             <div></div>
-             <MyModal />
+            <div></div>
+              <MyModal selectedSpeciesData={species} />
             </li>
           ))}
         </ul>
