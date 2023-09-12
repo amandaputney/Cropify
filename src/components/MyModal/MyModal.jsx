@@ -21,9 +21,21 @@ export default function MyModal(props) {
           <Modal.Title>{selectedSpeciesData.common_name.toUpperCase()} DETAILS</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Cycle: {selectedSpeciesData.cycle}</p>
-          <p>Sunlight Needs: {selectedSpeciesData.sunlight}</p>
-          <p>Water Needs: {selectedSpeciesData.watering}</p>
+          <p>Cycle: {selectedSpeciesData.cycle === "Upgrade Plans To Premium/Supreme - https://perenual.com/subscription-api-pricing. I'm sorry" ? (
+            <p>Not available</p>
+            ) : (
+              selectedSpeciesData.cycle 
+            )}</p>
+          <p>Sunlight Needs: {selectedSpeciesData.sunlight === "Upgrade Plans To Premium/Supreme - https://perenual.com/subscription-api-pricing. I'm sorry" ? (
+            <p>Not available</p>
+            ) : (
+              selectedSpeciesData.sunlight 
+            )}</p>
+          <p>Water Needs: {selectedSpeciesData.watering === "Upgrade Plans To Premium/Supreme - https://perenual.com/subscription-api-pricing. I'm sorry" ? (
+            <p>Not available</p>
+            ) : (
+              selectedSpeciesData.watering 
+            )}</p>
         </Modal.Body>
          <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
