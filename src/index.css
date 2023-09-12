@@ -9,7 +9,7 @@
   --text-light: #454444;
   --text-dark: #201f1f;
   --bg-dark-rgb: #ccddd5;
-  margin-top: 170px;
+  margin-top: 130px;
 }
 
 *, *:before, *:after {
@@ -146,13 +146,6 @@ color: var(--darkteal) !important;
   font-size: 2vmin;
 }
 
-/* .form-container {
-  padding: 3vmin;
-  background-color: var(--light);
-  border: .1vmin solid var(--highlight);
-  border-radius: 1vmin;
-} */
-
 p.error-message {
   color: var(--darkteal);
   text-align: center;
@@ -164,6 +157,7 @@ form {
   gap: 1.25vmin;
   color: var(--text-light);
 }
+
 
 label {
   font-size: 2vmin;
@@ -226,7 +220,7 @@ button[type="submit"] {
   padding: .6vmin .8vmin;
 }
 
-footer {
+/* footer {
   padding: auto;
   position: fixed;
   bottom: 0;
@@ -235,6 +229,28 @@ footer {
   color: rgb(203, 255, 228);
   text-align: center;
   font-size: 10vmin;
+} */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  /* Adjust the height as needed */
+  font-size: 6vmin;
+  font-family: 'Itim', cursive;
+  background-color: #0ca789;
+  /* Set the background color */
+  color: rgb(203, 255, 228);
+  vertical-align: top;
+  /* Set the text color */
+  text-align: center;
+  /* Center the content horizontally */
+  line-height: 35px;
+  /* Vertically center the content */
+  z-index: 999;
+  /* Ensure it's above other elements */
 }
 
 
