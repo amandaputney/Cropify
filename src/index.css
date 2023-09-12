@@ -8,10 +8,18 @@
   --darkteal: #0ca789;
   --text-light: #454444;
   --text-dark: #201f1f;
+  --bg-dark-rgb: #ccddd5;
+  margin-top: 170px;
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
+}
+
+.landinglogo {
+  width: 150px;
+  height: 150px;
+  margin: 60px;
 }
 
 ul {
@@ -25,7 +33,7 @@ ul li {
 }
 
 body {
-  margin: 0;
+  margin: ;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
@@ -41,11 +49,52 @@ code {
     monospace;
 }
 
+
+
 nav {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: var(--darkteal);
-  padding-bottom: 50px;
+  font-family: 'Itim', cursive;
+  font-size: 3vmin;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  /* Horizontally align items */
+  align-items: center;
+  /* Vertically center items */
+  background-color: var(--darkteal);
+  /* Set the background color */
+  color: white;
+  /* Set text color */
+  position: fixed;
+  z-index: 100;
+  /* Ensure the navbar is above other elements */
+  top: 0;
 }
+
+
+
+/* Style for the navbar links */
+nav a {
+  color: var(--lightteal);
+  /* Set the link color */
+  text-decoration: none;
+  /* Remove underlines from links */
+  margin: 0 10px;
+  /* Add spacing between links */
+}
+
+/* Style for the navbar logo */
+nav .navLogo {
+  width: 60px;
+  height: 60px;
+}
+
+/* Style for the Log Out link */
+nav #LogOut {
+  margin-left: auto;
+  /* Push Log Out link to the right */
+}
+
 
 #root {
   height: 100%;
@@ -98,12 +147,12 @@ color: var(--darkteal) !important;
   font-size: 2vmin;
 }
 
-.form-container {
+/* .form-container {
   padding: 3vmin;
   background-color: var(--light);
   border: .1vmin solid var(--highlight);
   border-radius: 1vmin;
-}
+} */
 
 p.error-message {
   color: var(--darkteal);
@@ -112,7 +161,7 @@ p.error-message {
 
 form {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 5fr;
   gap: 1.25vmin;
   color: var(--text-light);
 }
@@ -138,7 +187,7 @@ input:focus {
 }
 
 button, a.button, .btn, btn-primary {
-  margin: 1vmin;
+  margin: 2vmin;
   padding: 1vmin;
   color: var(--white);
   background-color: var(--darkteal) !important;
@@ -146,15 +195,19 @@ button, a.button, .btn, btn-primary {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2) !important;
+  border: .2vmin solid orange !important;
   border-radius: .5vmin !important;
   outline: none;
   cursor: pointer;
 }
 
-button.btn-sm {
-  font-size: 1.5vmin;
-  padding: .6vmin .8vmin;
+button.logIn {
+  font-size: 2vmin;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
 }
 
 button.btn-xs {
@@ -168,8 +221,10 @@ button:disabled, form:invalid button[type="submit"] {
 }
 
 button[type="submit"] {
-  grid-column: span 2;
+  grid-column: 2;
   margin: 1vmin 0 0;
+  align-content: center;
+  padding: .6vmin .8vmin;
 }
 
 footer {
@@ -177,11 +232,12 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(205, 246, 225);
+  font-family: 'Itim', cursive;
+  color: rgb(203, 255, 228);
   text-align: center;
-  font-size: 8vmin;
+  font-size: 10vmin;
 }
+
 
 img {
   width: 200px;
