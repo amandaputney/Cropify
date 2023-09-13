@@ -1,0 +1,9 @@
+element.style {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid teal !important;
+}
+
+#jimu-link-app-0 {
+    background-color: undefined;
+    border: 1px solid teal !important;
+}

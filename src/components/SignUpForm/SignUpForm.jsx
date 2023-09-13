@@ -10,6 +10,8 @@ export default class SignUpForm extends Component {
         confirm: '',
         error: '',
     };
+
+    
 //go to approach for making sure that "this" is bound to the component instance
     // handleChange = (evt) => {
     //     alert(JSON.stringify(this.state))

@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import axios from 'axios';
 import MyModal from '../MyModal/MyModal';
+import Image from 'react-bootstrap/Image';
 
 
 export default function SpeciesSearch() {
@@ -67,7 +68,7 @@ export default function SpeciesSearch() {
               "https://perenual.com/storage/image/upgrade_access.jpg" ? (
               <p>Image not available</p>
             ) : (
-              <img src={species.default_image.original_url} alt="image" />
+           <Image src={species.default_image.original_url} alt="image" rounded /> 
             )}
             <div></div>
             <div></div>

@@ -1,4 +1,5 @@
 import { checkToken } from "../../utilities/users-service";
+import './HardinessZonePage.css'
 
 export default function PlanPage () {
     async function handleCheckToken() {
@@ -15,7 +16,7 @@ export default function PlanPage () {
         <h2></h2>
 
         <iframe src="https://experience.arcgis.com/experience/58908bc6c8cd4e2f9f2ed73b80191d15/" 
-        frameborder="0" width="1000" height="600"></iframe>
+        frameborder="1" width="1000" height="600"></iframe>
         <br />
 
     </>

@@ -16,7 +16,10 @@ export default function MyModal(props) {
         Details
       </Button>
 
-      <Modal show={showModal} onHide={handleClose}>
+      <Modal show={showModal} onHide={handleClose}
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
         <Modal.Header closeButton>
           <Modal.Title>{selectedSpeciesData.common_name.toUpperCase()} DETAILS</Modal.Title>
         </Modal.Header>
