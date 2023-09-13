@@ -68,6 +68,8 @@ https://crop-ifyy-9d17ac299a72.herokuapp.com/
 
 - Make addition API calls to Perenual
 
+#### Add OAuth
+
 #### Add CRUD Functionality
 
 - Allow users to add queried plants to their user specific rotation plan
