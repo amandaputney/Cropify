@@ -10,15 +10,11 @@ export default function HomePage () {
     return (
     <>
       <br />
-            <h4> <b>Cropify</b> is a full-stack single-page application that allows users 
-                to plan and visualize crop rotation for small scale farms and gardens. </h4>
-      <br />       
-            <h4>  This user friendly application will
-                serve as a valuable tool for farmers & gardeners to improve the 
-                sustainability and productivity of their harvests.</h4>
-     <br />       
-            <h4>It promotes responsible
-                land management practices, reduces the need for chemical inputs, and contributes to long-term soil health. </h4>
+            <h4> <b>Cropify</b> is a full-stack single-page application that allows users to plan and visualize crop rotation for small scale farms and gardens. </h4>
+      <br />   
+            <h4>  This user friendly application will serve as a valuable tool for farmers & gardeners to improve the sustainability and productivity of their harvests.</h4>
+     <br />   
+            <h4>It promotes responsible land management practices, reduces the need for chemical inputs, and contributes to long-term soil health. </h4>
       <br />
             <h5>  Data is sourced from USDA, ESRI, and the Perenual API.</h5>
       <br />

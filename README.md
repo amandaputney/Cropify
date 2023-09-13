@@ -34,13 +34,17 @@ Cropify is a full-stack single-page application that allows users to plan and vi
 
 ☐ Allow users to CRUD specific crop rotation plans
 
-### API Proof of Concept:
+<hr>
+
+### Planning:
+
+#### API Proof of Concept
 
 [_Perenual_](https://perenual.com/docs/api)
 
 ![](https://hackmd.io/_uploads/SkiBgHIR3.png)
 
-### Wireframes:
+#### Wireframes
 
 ![](https://hackmd.io/_uploads/H1siJUUC2.png)
 
@@ -48,25 +52,32 @@ Cropify is a full-stack single-page application that allows users to plan and vi
 
 ![](https://hackmd.io/_uploads/HyanAuLC3.png)
 
-### Express API Routes:
+<hr>
+
+### Deployed Application:
+
+https://crop-ifyy-9d17ac299a72.herokuapp.com/
+
+![Alt text](image-1.png)
+
+![Alt text](image.png)
+
+### Next Steps:
+
+#### Expand plant details modal
+
+- Make addition API calls to Perenual
+
+#### Add CRUD Functionality
+
+- Allow users to add queried plants to their user specific rotation plan
+
+#### Express API Routes:
 
 _In progress_
 
-### React-Component-Diagram (RCD):
+#### React-Component-Diagram (RCD):
 
 _In progress_
 
 ![](https://hackmd.io/_uploads/Sk9uXLUA2.png)
-
-### Getting Started:
-
-https://crop-ifyy-9d17ac299a72.herokuapp.com/
-
-### Planning Tools:
-
-- [Kanban Board](https://www.notion.so/59c675c3b16f40df98e1c6d2ccdefe67?v=f423c26644104be7acc0e4b8f271ea89&pvs=4)
-<hr>
-
-### Next Steps:
-
-- Add Planned future enhancements here

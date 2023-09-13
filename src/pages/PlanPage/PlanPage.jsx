@@ -8,12 +8,11 @@ export default function PlanPage () {
 
   
     return (
-//must wrap below in <> </> to return a single root component/node
     <>
         <h1>Crop Rotation Plans</h1>
         <br />
         <h2>Coming Soon!</h2>
-
+        <br />
     </>
     );
 };

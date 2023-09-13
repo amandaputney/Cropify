@@ -9,7 +9,7 @@ export default function PlanPage () {
 
   
     return (
-//must wrap below in <> </> to return a single root component/node
+        //REMINDER: must wrap below in <> </> to return a single root component/node
     <>
         <h1>Find Your Hardiness Zone</h1>
         <br />

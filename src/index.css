@@ -40,8 +40,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--mint) !important;
   padding: 2vmin;
-  /* height: 100vh;
-  min-height: 400px; */
   margin-bottom: 50px;
   padding-bottom: 2.5rem;
   clear: both;
@@ -61,13 +59,9 @@ nav {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  /* Horizontally align items */
   align-items: center;
-  /* Vertically center items */
   background-color: var(--darkteal);
-  /* Set the background color */
   color: white;
-  /* Set text color */
   position: fixed;
   z-index: 100;
   /* Ensure the navbar is above other elements */
@@ -84,7 +78,7 @@ nav a {
   /* Add spacing between links */
 }
 
-/* Style for the navbar logo */
+
 nav .navLogo {
   width: 60px;
   height: 60px;
@@ -94,11 +88,9 @@ nav .navLogo {
   color: orange !important;
 }
 
-
-/* Style for the Log Out link */
 nav #LogOut {
   margin-left: auto;
-  /* Push Log Out link to the right */
+
 }
 
 
@@ -187,6 +179,8 @@ input:focus {
   border-color: var(--darkteal);
 }
 
+
+
 button, a.button, .btn, btn-primary, .btn-primary{
   margin-bottom: 2vmin;
   margin-top: 1vmin;;
@@ -246,20 +240,12 @@ footer {
   width: 100%;
   height: 3rem;
   text-align: center;
-  /* position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 10px; */
-  /* Adjust the height as needed */
   font-size: 6vmin;
   font-family: 'Itim', cursive;
   color: rgb(203, 255, 228);;
   vertical-align: bottom;
-  /* line-height: 35px; */
-  /* Vertically center the content */
-  /* z-index: 1; */
-  /* Ensure it's above other elements */
+  z-index: 1; 
+  /* Ensure it's above other elements*/
 }
 
 
